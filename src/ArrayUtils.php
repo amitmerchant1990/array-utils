@@ -4,7 +4,7 @@ namespace AmitMerchant;
 
 class ArrayUtils
 {
-    public $collection;
+    private $collection;
 
     /**
      * Returns the class instance
