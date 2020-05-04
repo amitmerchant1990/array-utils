@@ -1,4 +1,4 @@
-PHP Wrapper for PHP Array methods
+Wrapper for PHP Array methods
 ===
 
 This is a wrapper class implementation which I've described in this article.
