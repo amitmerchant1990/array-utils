@@ -1,0 +1,13 @@
+{
+    "name": "amitmerchant/php-wrapper",
+    "description": "Implemention of common PHP methods wrapper",
+    "type": "library",
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AmitMerchant\\": "src/"
+        }
+    }
+}
