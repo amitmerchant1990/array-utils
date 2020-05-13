@@ -15,6 +15,8 @@ $ composer require amitmerchant/array-utils
 ```php
 <?php
 
+use Amitmerchant\ArrayUtils\ArrayUtils;
+
 $mappedArray = ArrayUtils::getInstance()
                     ->collect([1, 2, 3, 4])
                     ->map(function($iteration) {
