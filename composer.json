@@ -1,6 +1,6 @@
 {
     "name": "amitmerchant/array-utils",
-    "description": "Test Package",
+    "description": "Simple wrapper implementation of common PHP array methods",
     "keywords": [
         "amitmerchant",
         "test-package"
