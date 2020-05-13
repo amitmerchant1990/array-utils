@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Test Suite" tests="4" assertions="5" errors="0" failures="0" skipped="0" time="0.002570">
+    <testsuite name="Amitmerchant\ArrayUtils\Tests\ArrayUtilsTest" file="/home/amitmerchant/workspace/php-wrapper/tests/ArrayUtilsTest.php" tests="4" assertions="5" errors="0" failures="0" skipped="0" time="0.002570">
+      <testcase name="it_successfully_maps_array" class="Amitmerchant\ArrayUtils\Tests\ArrayUtilsTest" classname="Amitmerchant.ArrayUtils.Tests.ArrayUtilsTest" file="/home/amitmerchant/workspace/php-wrapper/tests/ArrayUtilsTest.php" line="11" assertions="1" time="0.001993"/>
+      <testcase name="it_successfully_filters_array" class="Amitmerchant\ArrayUtils\Tests\ArrayUtilsTest" classname="Amitmerchant.ArrayUtils.Tests.ArrayUtilsTest" file="/home/amitmerchant/workspace/php-wrapper/tests/ArrayUtilsTest.php" line="21" assertions="1" time="0.000285"/>
+      <testcase name="it_successfully_checks_contains" class="Amitmerchant\ArrayUtils\Tests\ArrayUtilsTest" classname="Amitmerchant.ArrayUtils.Tests.ArrayUtilsTest" file="/home/amitmerchant/workspace/php-wrapper/tests/ArrayUtilsTest.php" line="31" assertions="2" time="0.000226"/>
+      <testcase name="it_successfully_gets_array_values" class="Amitmerchant\ArrayUtils\Tests\ArrayUtilsTest" classname="Amitmerchant.ArrayUtils.Tests.ArrayUtilsTest" file="/home/amitmerchant/workspace/php-wrapper/tests/ArrayUtilsTest.php" line="38" assertions="1" time="0.000066"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

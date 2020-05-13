@@ -1,13 +1,41 @@
 {
-    "name": "amitmerchant/php-wrapper",
-    "description": "Implemention of common PHP methods wrapper",
+    "name": "amitmerchant/array-utils",
+    "description": "Test Package",
+    "keywords": [
+        "amitmerchant",
+        "test-package"
+    ],
+    "homepage": "https://github.com/amitmerchant1990/array-utils",
+    "license": "MIT",
     "type": "library",
+    "authors": [
+        {
+            "name": "Amit Merchant",
+            "email": "bullredeyes@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
-        "php": ">=5.5.0"
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
     },
     "autoload": {
         "psr-4": {
-            "AmitMerchant\\": "src/"
+            "Amitmerchant\\ArrayUtils\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Amitmerchant\\ArrayUtils\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
     }
 }

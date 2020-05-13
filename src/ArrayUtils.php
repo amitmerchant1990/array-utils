@@ -1,6 +1,8 @@
 <?php
 
-namespace AmitMerchant;
+namespace Amitmerchant\ArrayUtils;
+
+use Closure;
 
 class ArrayUtils
 {
@@ -9,7 +11,7 @@ class ArrayUtils
     /**
      * Returns the class instance
      *
-     * @return ArrayUtils
+     * @return \AmitMerchant\ArrayUtils\ArrayUtils
      */
     public static function getInstance()
     {
@@ -32,10 +34,10 @@ class ArrayUtils
     /**
      * Wrapper method for array_map
      *
-     * @param \Closure $closure
+     * @param Closure $closure
      * @return mixed
      */
-    public function map(\Closure $closure)
+    public function map(Closure $closure)
     {
         return array_map($closure, $this->collection);
     }
@@ -43,10 +45,10 @@ class ArrayUtils
     /**
      * Wrapper method for array_filter
      *
-     * @param \Closure $closure
+     * @param Closure $closure
      * @return array
      */
-    public function filter(\Closure $closure)
+    public function filter(Closure $closure)
     {
         return array_filter($this->collection, $closure);
     }
