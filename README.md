@@ -7,12 +7,12 @@ This is a wrapper class implementation which I've described [in this article](ht
 You can install the package via composer:
 
 ```bash
-composer require amitmerchant/array-utils
+$ composer require amitmerchant/array-utils
 ```
 
 ## Usage
 
-``` php
+```php
 $mappedArray = ArrayUtils::getInstance()
                     ->collect([1, 2, 3, 4])
                     ->map(function($iteration) {
@@ -34,7 +34,7 @@ Array
 ### Testing
 
 ``` bash
-composer test
+$ composer test
 ```
 
 ### Changelog
@@ -51,7 +51,7 @@ If you discover any security related issues, please email bullredeyes@gmail.com 
 
 ## Credits
 
-- [Amit Merchant](https://github.com/amitmerchant)
+- [Amit Merchant](https://github.com/amitmerchant1990)
 - [All Contributors](../../contributors)
 
 ## License
