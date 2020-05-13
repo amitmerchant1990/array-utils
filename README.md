@@ -13,6 +13,8 @@ $ composer require amitmerchant/array-utils
 ## Usage
 
 ```php
+<?php
+
 $mappedArray = ArrayUtils::getInstance()
                     ->collect([1, 2, 3, 4])
                     ->map(function($iteration) {
@@ -20,7 +22,7 @@ $mappedArray = ArrayUtils::getInstance()
                     });
 
 print_r($mappedArray);
-/**
+/*
 Array
 (
     [0] => 2
@@ -36,10 +38,6 @@ Array
 ``` bash
 $ composer test
 ```
-
-### Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
 ## Contributing
 
