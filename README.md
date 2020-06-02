@@ -54,7 +54,7 @@ Array
 */
 ```
 
-For more example, check [tests](https://github.com/amitmerchant1990/array-utils/tree/master/tests).
+For more examples, check [tests](https://github.com/amitmerchant1990/array-utils/tree/master/tests).
 
 ## Testing
 
