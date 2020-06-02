@@ -17,7 +17,7 @@ $ composer require amitmerchant/array-utils
 
 use Amitmerchant\ArrayUtils\ArrayUtils;
 
-// Map Array
+// Map Array → wrapper for [array_map](https://www.php.net/manual/en/function.array-map.php)
 
 $mappedArray = ArrayUtils::getInstance()
                     ->collect([1, 2, 3, 4])
@@ -36,7 +36,7 @@ Array
 )
 */
 
-// Filter Array
+// Filter Array → wrapper for [array_filter](https://www.php.net/manual/en/function.array-filter.php)
 
 $filterArray = ArrayUtils::getInstance()
                     ->collect([1, 2, 3, 4, 5])
@@ -53,6 +53,8 @@ Array
 )
 */
 ```
+
+For more example, check [tests](https://github.com/amitmerchant1990/array-utils/tree/master/tests).
 
 ### Testing
 
