@@ -17,6 +17,8 @@ $ composer require amitmerchant/array-utils
 
 use Amitmerchant\ArrayUtils\ArrayUtils;
 
+// Map Array
+
 $mappedArray = ArrayUtils::getInstance()
                     ->collect([1, 2, 3, 4])
                     ->map(function($iteration) {
@@ -31,6 +33,23 @@ Array
     [1] => 4
     [2] => 6
     [3] => 8
+)
+*/
+
+// Filter Array
+
+$filterArray = ArrayUtils::getInstance()
+                    ->collect([1, 2, 3, 4, 5])
+                    ->filter(function($iteration) {
+                        return ($iteration & 1);
+                    });
+
+/*
+Array
+(
+    [0] => 1
+    [1] => 3
+    [2] => 5
 )
 */
 ```
