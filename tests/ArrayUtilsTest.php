@@ -45,4 +45,26 @@ class ArrayUtilsTest extends TestCase
 
         $this->assertEquals(['Peter', '41', 'USA'], ArrayUtils::getInstance()->collect($user)->getValues());
     }
+
+    /** @test */
+    public function it_successfully_reduces_array()
+    {
+        $this->assertEquals(15, ArrayUtils::getInstance()
+            ->collect([1, 2, 3, 4, 5])
+            ->reduce(function($carry, $item) {
+                $carry += $item;
+                return $carry;
+            }));
+    }
+
+    /** @test */
+    public function it_successfully_reduces_array_with_initial_value()
+    {
+        $this->assertEquals(1200, ArrayUtils::getInstance()
+            ->collect([1, 2, 3, 4, 5])
+            ->reduce(function($carry, $item) {
+                $carry *= $item;
+                return $carry;
+            }, 10));
+    }
 }

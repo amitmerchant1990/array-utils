@@ -94,4 +94,17 @@ class ArrayUtils
     {
         return array_search($searchParam, $this->collection);
     }
+
+    /**
+     * Wrapper method for array_reduce
+     *
+     * @param Closure $callback
+     * @param mixed $initial
+     * 
+     * @return mixed
+     */
+    public function reduce(Closure $callback, $initial = null)
+    {
+        return array_reduce($this->collection, $callback, $initial);
+    }
 }
