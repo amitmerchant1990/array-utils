@@ -67,4 +67,20 @@ class ArrayUtilsTest extends TestCase
                 return $carry;
             }, 10));
     }
+
+    /** @test */
+    public function it_successfully_split_array_into_chunks()
+    {
+        $this->assertEquals([[1, 2], [3, 4], [5]], ArrayUtils::getInstance()
+            ->collect([1, 2, 3, 4, 5])
+            ->chunk(2));
+    }
+
+    /** @test */
+    public function it_successfully_split_array_into_chunks_with_keys_preserved()
+    {
+        $this->assertEquals([[0 => 1, 1 => 2], [2 => 3, 3 => 4], [4 => 5]], ArrayUtils::getInstance()
+            ->collect([1, 2, 3, 4, 5])
+            ->chunk(2, true));
+    }
 }

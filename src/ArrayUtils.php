@@ -35,9 +35,9 @@ class ArrayUtils
      * Wrapper method for array_map
      *
      * @param Closure $closure
-     * @return mixed
+     * @return array
      */
-    public function map(Closure $closure)
+    public function map(Closure $closure): array
     {
         return array_map($closure, $this->collection);
     }
@@ -48,7 +48,7 @@ class ArrayUtils
      * @param Closure $closure
      * @return array
      */
-    public function filter(Closure $closure)
+    public function filter(Closure $closure): array
     {
         return array_filter($this->collection, $closure);
     }
@@ -56,10 +56,10 @@ class ArrayUtils
     /**
      * Wrapper method for in_array
      *
-     * @param $item
+     * @param mixed $item
      * @return bool
      */
-    public function contains($item): bool
+    public function contains(mixed $item): bool
     {
         return in_array($item, $this->collection);
     }
@@ -69,7 +69,7 @@ class ArrayUtils
      *
      * @return array
      */
-    public function getValues()
+    public function getValues(): array
     {
         return array_values($this->collection);
     }
@@ -79,7 +79,7 @@ class ArrayUtils
      *
      * @return array
      */
-    public function getKeys()
+    public function getKeys(): array
     {
         return array_keys($this->collection);
     }
@@ -87,12 +87,12 @@ class ArrayUtils
     /**
      * Wrapper method for array_search
      *
-     * @param string $searchParam
+     * @param mixed $searchParam
      * @return false|int|string
      */
-    public function search(string $searchParam)
+    public function search(mixed $searchParam, bool $strict = false): int|string|false
     {
-        return array_search($searchParam, $this->collection);
+        return array_search($searchParam, $this->collection, $strict = false);
     }
 
     /**
@@ -103,8 +103,21 @@ class ArrayUtils
      * 
      * @return mixed
      */
-    public function reduce(Closure $callback, $initial = null)
+    public function reduce(Closure $callback, mixed $initial = null): mixed
     {
         return array_reduce($this->collection, $callback, $initial);
+    }
+
+    /**
+     * Wrapper method for array_chunk
+     *
+     * @param int $length
+     * @param bool $preserve_keys
+     * 
+     * @return array
+     */
+    public function chunk(int $length, bool $preserve_keys = false): array
+    {
+        return array_chunk($this->collection, $length, $preserve_keys);
     }
 }
