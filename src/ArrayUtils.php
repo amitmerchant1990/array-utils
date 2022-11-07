@@ -13,7 +13,7 @@ class ArrayUtils
      *
      * @return \AmitMerchant\ArrayUtils\ArrayUtils
      */
-    public static function getInstance()
+    public static function getInstance(): ArrayUtils
     {
         return new ArrayUtils();
     }
